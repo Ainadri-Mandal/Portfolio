@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ainadri Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6a197fcc88.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container header-up">
+            <nav>
+                <img class="logo" src="assets/pictures/ainadri logo yellow.png" height="50px" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I am <span>Ainadri Mandal</span>  <br> from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-me">Hi, I’m Ainadri Mandal, a Computer Science student pursuing a B.Tech in Computer Science & Engineering. I specialize in UI/UX design and front-end development, combining creativity and technical skills to craft user-friendly digital experiences.
+
+                        I’ve also contributed to research in AI/ML, publishing a paper in Scopus titled "Machine Learning Driven Healthcare Through Online Gym Under the Framework of Artificial Life." My technical expertise includes tools like Figma and Adobe XD, along with technologies such as HTML, CSS, JavaScript, and React.
+                        
+                        Passionate about solving problems through design and innovation, I’m always exploring new opportunities to learn and grow. Let’s collaborate and create impactful solutions!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Front-end Development</span><br>Interactive Website Interfaces</li>
+                            <li><span>AIML</span><br>Machine Learning</li>
+                            <li><span>SQL</span><br>DataBase Management System</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>College Experience</span><br>Designing Web App Interfaces</li>
+                            <li><span>College Experience</span><br>Web App Development</li>
+                            <li><span>College Experience</span><br>Interactive Website Interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2012-2017</span><br>International Indian School, Al-Jubail</li>
+                            <li><span>2017-2021</span><br>Mother International School</li>
+                            <li><span>2022-Present</span><br>Btech. in Computer Science & Engineering from Swami Vivekananda University</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-col-1">
+                    <img src="assets/pictures/ainadri sit teal bg.png" alt="Ainadri Photo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------services-------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------Portfolio--------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/pictures/work photo- 1(1)(1).png" height="300px" >
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Apps which coonect you to any people around the world. Download it From the Play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/pictures/work photo-2.png" height="300px">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Apps which coonect you to any people around the world. Download it From the Play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/pictures/work photo- 3(1).png" height="300px">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Apps which coonect you to any people around the world. Download it From the Play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-----------------------Contact Form------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> mandalainadri002@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91-6289176749</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ainadri.mandal" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="mailto:mandalainadri002@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/ainadri-m-19b966264?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Br5qVqFWuRPOAjTGf7HLTTg%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Ainadri-Mandal" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/ainadri_annie/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="./assets/AINADRI CV 2.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright © Ainadri Mandal . All rights reserved <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right= "0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+            
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyCxL4WFgnJ1ucEe8VqmeGF-94-maGS-h2P9kJpiuIL_jllQs13s0VEkxmuHat6OK9f/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent succesfully!!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
