@@ -300,6 +300,158 @@ nav ul li a:hover::after{
     background: #c9664f;
 }
 
+.container {
+    padding: 10px 8%;
+}
+
+/*------------------- Tech Stack Section -------------------*/
+#techstack {
+    padding: 50px 0;
+    background-color: #366274;
+    color: #ffd978;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tech-item {
+    background-color: #264653;
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, background-color 0.3s;
+    animation: float 4s ease-in-out infinite;
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-item i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ffd978;
+}
+
+.tech-item:hover {
+    transform: scale(1.1);
+    background-color: #cf664f;
+    color: #fff;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Ensure links inside cards remain clickable */
+.achievement-card a,
+.services-list div a {
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+    display: inline-block;
+}
+
+
+/*------------------- Achievements Section -------------------*/
+#achievements {
+    padding: 60px 0;
+    color: #ffd978;
+}
+
+#achievements .container {
+    padding: 10px 8%;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.achievement-card {
+    background-color: #2a4d56;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    transform-style: preserve-3d;
+    perspective: 800px;
+}
+
+.achievement-card:hover {
+    transform: rotateY(5deg) scale(1.03);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+    background-color: #305d68;
+}
+
+.achievement-card h3 {
+    color: #cf664f;
+}
+
+.achievement-card a {
+    color: #ffd978;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/*------------------- Certifications Section -------------------*/
+.certifications-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.cert-card {
+    background: linear-gradient(145deg, #264653, #305d68);
+    color: #ffd978;
+    border: 2px solid #cf664f;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    width: 260px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.cert-card:hover {
+    transform: rotateY(-8deg) scale(1.05);
+    background: linear-gradient(145deg, #305d68, #264653);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.3);
+}
+
+.cert-card h4 {
+    margin-bottom: 10px;
+    color: #cf664f;
+}
+
+.cert-card a {
+    text-decoration: none;
+    color: #ffd978;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+
 /*------------------contact-------------*/
 
 .contact-left{
@@ -465,3 +617,159 @@ nav .fa-solid{
     margin-top: -40px;
     display: block;
 }
+
+/* Existing styles above remain unchanged */
+
+/* Additional responsive fixes for small screens */
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 150px;
+    }
+
+    .header-text {
+        margin: 30% auto 0;
+        font-size: 16px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .header-text h1 {
+        font-size: 26px;
+        margin-top: 10px;
+    }
+
+    .about-me {
+        font-size: 14px;
+    }
+
+    .tab-links {
+        font-size: 14px;
+    }
+
+    .tab-contents ul li {
+        font-size: 14px;
+    }
+
+    .services-list div {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .services-list div i {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .services-list div h2 {
+        font-size: 22px;
+    }
+
+    .services-list div a {
+        font-size: 11px;
+    }
+
+    .work img {
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .layer {
+        font-size: 13px;
+        padding: 20px;
+    }
+
+    .tech-item {
+        width: 90px;
+        height: 90px;
+        font-size: 12px;
+    }
+
+    .tech-item i {
+        font-size: 20px;
+    }
+
+    .achievement-card,
+    .cert-card {
+        padding: 15px;
+        font-size: 13px;
+    }
+
+    .cert-card h4 {
+        font-size: 15px;
+    }
+
+    .cert-card a {
+        font-size: 13px;
+    }
+
+    .contact-left p {
+        font-size: 14px;
+    }
+
+    .social-icons a {
+        font-size: 24px;
+    }
+
+    .form input, .form textarea {
+        font-size: 16px;
+    }
+
+    .btn, .btn2 {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header-text {
+        font-size: 14px;
+    }
+
+    .header-text h1 {
+        font-size: 22px;
+    }
+
+    .sub-title {
+        font-size: 28px;
+    }
+
+    .tech-item {
+        width: 80px;
+        height: 80px;
+        font-size: 10px;
+    }
+
+    .tech-item i {
+        font-size: 18px;
+    }
+
+    .layer h3 {
+        font-size: 16px;
+    }
+
+    .layer p {
+        font-size: 12px;
+    }
+
+    .achievement-card,
+    .cert-card {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .cert-card h4 {
+        font-size: 13px;
+    }
+
+    .cert-card a {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+
+/* End of responsive additions */
