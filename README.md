@@ -1,4 +1,4 @@
-# 🧠 Ainadri Mandal - Portfolio
+#  Ainadri Mandal - Portfolio
 
 **Visit Here** → [View Portfolio Website 🚀](https://ainadri-mandal.github.io/Portfolio/)
 
