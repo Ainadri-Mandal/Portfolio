@@ -1,6 +1,6 @@
 #  Ainadri Mandal - Portfolio
 
-**Visit Here** → [View Portfolio Website 🚀](https://ainadri-mandal.github.io/Portfolio/)
+**Visit Here** → [View Portfolio Website 🚀](https://ainadri-mandal-portfolio.vercel.app/)
 
 Welcome to my portfolio! I'm **Ainadri Mandal**, a Computer Science undergraduate passionate about turning data into insights and building engaging user experiences with frontend development.
 
